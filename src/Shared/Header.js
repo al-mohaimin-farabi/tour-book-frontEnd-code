@@ -29,10 +29,10 @@ const Header = () => {
               >
                 Blood Tests
               </Nav.Link>
-              {user.displayName && (
+              {user?.displayName && (
                 <div className="d-flex align-items-center fs-5 text-dark">
                   <span className="me-1">
-                    {user.displayName == null ? user.email : user.displayName}
+                    {user?.displayName == null ? user.email : user.displayName}
                   </span>
 
                   {user.photoURL && (

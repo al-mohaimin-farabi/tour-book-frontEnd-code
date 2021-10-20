@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory, useLocation } from "react-router";
-
+import "./Login.css";
 import useAuth from "../../../Hooks/useAuth";
 
 const Login = () => {
@@ -15,6 +15,7 @@ const Login = () => {
     isLogin,
   } = useAuth();
   const location = useLocation();
+  console.log(location);
   const redirect_uri = location.state?.from || "/home";
   const history = useHistory();
 
@@ -101,9 +102,14 @@ const Login = () => {
                     Already Registered
                   </label>
                 </div>
-                <button type="submit" className="btn btn-primary mt-3 me-2">
+                <button
+                  type="submit"
+                  className="btn btn-primary mt-3 me-2 tooltips"
+                >
                   Submit
+                  <span class="tooltiptext">Click Twice</span>
                 </button>
+
                 <button
                   className="btn btn-success  mt-3"
                   onClick={handleGoogleLogin}

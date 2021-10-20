@@ -10,6 +10,7 @@ import {
 } from "firebase/auth";
 import { useState, useEffect } from "react";
 // import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 import initializeAuthentication from "../Pages/Login/Firebase/FireBaseInit";
 
 initializeAuthentication();
@@ -44,13 +45,16 @@ const useFirebase = () => {
         // Signed in
 
         // ...clg
-        setUserName();
+
         setError("");
+        setUserName();
       })
       .catch((error) => {
         setError(error.message);
         // ..
-      });
+      })
+      .finally(() => setUserName());
+    
   };
 
   const handleRegistration = (e) => {
@@ -74,6 +78,21 @@ const useFirebase = () => {
         const errorCode = error.code;
         const errorMessage = error.message;
         setError(errorCode, errorMessage);
+      })
+      .finally(() => setUserName());
+  };
+
+  const setUserName = () => {
+    updateProfile(auth.currentUser, {
+      displayName: name,
+    })
+      .then((res) => {
+        // Profile updated!
+        // ...
+      })
+      .catch((error) => {
+        // An error occurred
+        // ...
       });
   };
 
@@ -117,20 +136,6 @@ const useFirebase = () => {
       .catch((error) => {
         // An error happened.
         console.log(error);
-      });
-  };
-
-  const setUserName = () => {
-    updateProfile(auth.currentUser, {
-      displayName: name,
-    })
-      .then((res) => {
-        // Profile updated!
-        // ...
-      })
-      .catch((error) => {
-        // An error occurred
-        // ...
       });
   };
 
