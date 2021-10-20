@@ -20,7 +20,7 @@ const Header = () => {
                 Home
               </Nav.Link>
               <Nav.Link className="fw-normal fs-5" as={HashLink} to="/services">
-                Services
+                All Services
               </Nav.Link>
               <Nav.Link
                 className="fw-normal fs-5"
