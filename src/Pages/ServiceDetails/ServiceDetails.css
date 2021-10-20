@@ -1,0 +1,13 @@
+.my-img {
+  width: 100%;
+  height: 400px;
+}
+.my-card {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-p {
+  margin: 10px 0px !important;
+}

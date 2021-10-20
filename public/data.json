@@ -1,0 +1,65 @@
+[
+  {
+    "key": 1,
+    "title": "AAROGYAM MINI",
+    "img": "./dataimage/img1.jpg",
+    "description": "Full body checkup package includes Thyroid, Diabetes, CBC, Urinogram and more..",
+    "price": 399,
+    "totalTest": 45,
+    "Include": " CAP, ISO 9001, Home Sample Pickup, Online Report Delivery"
+  },
+  {
+    "key": 2,
+    "title": "Niramaya Basic Health Checkup",
+    "img": "./dataimage/img2.jpg",
+    "description": "Tests include Fasting, Thyroid, Lipid, Liver, Kidney, Urine, CBC, Iron, Bone Profile.",
+    "price": 700,
+    "totalTest": 85,
+    "Include": " NABL & ICMR, Home Collection Available, Online Report Delivery"
+  },
+  {
+    "key": 3,
+    "title": "Healthians Full Body Checkup with Vitamin Screening",
+    "img": "./dataimage/img3.jpg",
+    "description": "Healthians Full body checkup package includes Lipid, Liver, Thyroid, Iron, Diabetic, CBC, Kidney, Vitamins and more..",
+    "price": 1199,
+    "totalTest": 89,
+    "Include": " NABL Lab, FREE Home Sample Pickup, Smart Reports"
+  },
+  {
+    "key": 4,
+    "title": "HealthyLife Standard",
+    "img": "./dataimage/img4.jpg",
+    "description": "Tests for screening of the health status Like Lipid, Liver, Thyroid, Iron, Diabetic, CBC, Kidney, Urinogram, Electrolytes.",
+    "price": 1599,
+    "totalTest": 83,
+    "Include": " CAP, ISO 9001, Home Sample Pickup, Online Report Delivery"
+  },
+  {
+    "key": 5,
+    "title": "HealthyLife Advanced",
+    "img": "./dataimage/img5.jpg",
+    "description": "Tests for screening of the health status Like Lipid, Liver, Thyroid, Iron, Diabetic, CBC, Kidney, Hormone, Vitamin, Urinogram, Electrolytes",
+    "price": 1899,
+    "totalTest": 85,
+    "Include": " CAP, ISO 9001, Home Sample Pickup, Online Report Delivery"
+  },
+  {
+    "key": 6,
+    "title": "Full Body Checkup - Master",
+    "img": "./dataimage/img6.jpg",
+    "description": "Cardiac Risk Markers, Hormone, Diabetics Iron, Kidney, Thyroid, Vitamin, Pancreatic and more..",
+    "price": 4800,
+    "totalTest": 112,
+    "Include": " CAP, ISO 9001, Home Sample Pickup, Online Report Delivery"
+  },
+  {
+    "key": 7,
+    "title": "LACTATE DEHYDROGENASE(LDH)",
+    "img": "./dataimage/img7.jpg",
+    "description": "LDH blood test is mainly performed to determine the presence of tissue damage conditions like injury or inflammation in the liver, muscle, heart, lungs or kidneys.",
+    "price": 2500,
+    "totalTest": 1,
+    "Include": " CAP, ISO 9001, Home Sample Pickup, Online Report Delivery"
+  }
+]
