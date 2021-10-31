@@ -2,9 +2,13 @@ import LoadData from "../../Hooks/LoadData";
 import Service from "./Service";
 
 const Services = (props) => {
-  const datatoload = props.datato;
   const [services] = LoadData();
-
+  let datatoload;
+  if (props?.datato) {
+    datatoload = props.datato;
+  } else {
+    datatoload = services?.length;
+  }
   return (
     <div className="container my-4">
       <div className="row">

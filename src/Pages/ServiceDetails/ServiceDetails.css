@@ -11,3 +11,8 @@
 .card-p {
   margin: 10px 0px !important;
 }
+.order-from input {
+  width: 100% !important;
+  padding: 15px 10px !important;
+  margin: 10px 0px !important;
+}

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./Contexts/AuthProvider";
-import BloodTest from "./Pages/BloodTest/BloodTest";
+
 // import AuthProvider from "./Contexts/AuthProvider";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login/Login";
@@ -12,6 +12,11 @@ import NotFound from "./Pages/NotFound/NotFound";
 import BookingSuccess from "./Pages/BookingSuccess/BookingSuccess";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Services from "./Pages/Services/Services";
+import ContactUS from "./Shared/ContactUS";
+import MyOrders from "./Pages/MyOrders/MyOrders";
+import Confarmation from "./Pages/ManageAllOrders/ManageAllOrders";
+import ManageAllOrders from "./Pages/ManageAllOrders/ManageAllOrders";
+import AddService from "./Pages/AddService/AddService";
 function App() {
   return (
     <div className="App">
@@ -24,6 +29,10 @@ function App() {
             <Route exact path="/home">
               <Home></Home>
             </Route>
+            <Route exact path="/contactus">
+              <Header></Header>
+              <ContactUS footer={<Footer></Footer>}></ContactUS>
+            </Route>
             <Route exact path="/login">
               <Header></Header>
               <Login></Login>
@@ -33,20 +42,32 @@ function App() {
               <ServiceDetails></ServiceDetails>
               <Footer></Footer>
             </PrivateRoute>
-            <PrivateRoute exact path="/bloodtest">
+            <PrivateRoute exect path="/myorders">
               <Header></Header>
-              <BloodTest></BloodTest>
+              <MyOrders footer={<Footer></Footer>}></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute exect path="/confarmation">
+              <Header></Header>
+              <Confarmation></Confarmation>
               <Footer></Footer>
             </PrivateRoute>
+
             <PrivateRoute exact path="/services">
               <Header></Header>
-              <Services datato={7}>All</Services>
+              <Services>All</Services>
               <Footer></Footer>
             </PrivateRoute>
             <PrivateRoute exact path="/booked">
               <Header></Header>
-              <BookingSuccess></BookingSuccess>
-              <Footer></Footer>
+              <BookingSuccess footer={<Footer></Footer>}></BookingSuccess>
+            </PrivateRoute>
+            <PrivateRoute exact path="/manageallorders">
+              <Header></Header>
+              <ManageAllOrders footer={<Footer></Footer>}></ManageAllOrders>
+            </PrivateRoute>
+            <PrivateRoute exact path="/addservice">
+              <Header></Header>
+              <AddService footer={<Footer></Footer>}></AddService>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>

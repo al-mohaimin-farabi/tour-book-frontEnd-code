@@ -1,15 +1,5 @@
-.postion {
-  height: 550px;
-
-  position: relative;
-  filter: brightness(70%);
-}
-.position-two {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-}
-.shadow-text {
-  text-shadow: 1px 1px #000;
+.slider-img {
+  width: auto;
+  height: clamp(340px, 540px, 540px);
+  filter: brightness(75%);
 }
