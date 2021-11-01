@@ -29,13 +29,15 @@ const ServiceDetails = () => {
     order.orderTitle = service.title;
 
     if (confirmation) {
-      axios.post("http://localhost:5000/orders", order).then((res) => {
-        if (res.data.insertedId) {
-          alert("Adding Successful");
-        }
-        history.push("/booked");
-        reset();
-      });
+      axios
+        .post("https://grim-citadel-46797.herokuapp.com/orders", order)
+        .then((res) => {
+          if (res.data.insertedId) {
+            alert("Adding Successful");
+          }
+          history.push("/booked");
+          reset();
+        });
     } else {
       alert(
         `You Have Cancelled Booking ${service?.title}. Redirecting to home page`
