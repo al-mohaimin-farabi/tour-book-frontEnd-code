@@ -1,20 +1,29 @@
 # Getting Started with Diagnostic Center.app
 
-**_Diagnostic Center_** is A helth service booking Platform where people can book health services acording to there choice or need with reasonable price. There are so many servicesavailable here.
+**_Tour Planner_** is A tour service booking Platform where people can book tour services acording to there choice or need with reasonable price. There are so many servicesavailable here.
+
+<img
+src=“https://i.ibb.co/82cZhRM/screenshot-localhost-3000-2021-11-01-20-35-04.png”
+raw=true
+alt=“Subject Pronouns”
+style=“margin-left: 10px;”
+/>
 
 - You Will Find Quality
   - Service
-  - Lab
-  - Doctor
+  - Guide
+  - Enjoyment
   - Infrastructure etc.
 
-## In Diagnostic Center
+## In Tour Planner
 
-## [This](https://react-assignment-ff05e.web.app/) project was made with React,React Boostrap and many more library.
+## [This](https://travel-website-2d631.web.app/) project was made with React,React Boostrap, Nodejs, Express & monogDB and many more library.
+
+## Authentication was done with Google-firebase
 
 ## Available Scripts
 
 Bootstrap, React, Google-Font, Coustom CSS.
 
-###Go to project directory then type `npm start` on cmd to view this project on localhost port 3000
+###Go to project directory then type `npm start or yarn start` on cmd to view this project on localhost port 3000
 [http://localhost:3000](http://localhost:3000)
