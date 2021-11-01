@@ -19,6 +19,10 @@ style=“margin-left: 10px;”
 
 ## In Tour Planner
 
+There is a admin panel where admin can manage orders from client. Admin can do CRUD oparetion on his choice. He can add new services.
+![Test Image 4](https://i.ibb.co/MPD6LDW/screenshot-localhost-3000-2021-11-01-21-10-45.png)
+![Test Image 4](https://i.ibb.co/BNMxWdx/screenshot-localhost-3000-2021-11-01-21-11-15.png)
+
 ## [This](https://travel-website-2d631.web.app/) project was made with React,React Boostrap, Nodejs, Express & monogDB and many more library.
 
 ## Authentication was done with Google-firebase
