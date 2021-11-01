@@ -65,7 +65,7 @@ const ManageAllOrders = () => {
       </ul>
       <div className="text-center">
         <button
-          className="btn btn-success w-100 fw-bolder  mt-3"
+          className="btn btn-success w-100 fw-bolder  my-3"
           onClick={goTOAddService}
         >
           Add Service
