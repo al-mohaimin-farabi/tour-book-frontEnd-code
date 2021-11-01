@@ -2,7 +2,7 @@
 
 ![Image 0](https://i.ibb.co/j5VKy3J/logo.jpg)
 
-**_Tour Planner_** is A tour service booking Platform where people can book tour services acording to there choice or need with reasonable price. There are so many servicesavailable here.
+**_Tour Planner_** is A tour service booking Platform where people can book tour services acording to there choice or need with reasonable price. There are so many servicesavailable here. 
 
 <!-- <img
 src=“https://i.ibb.co/82cZhRM/screenshot-localhost-3000-2021-11-01-20-35-04.png”
