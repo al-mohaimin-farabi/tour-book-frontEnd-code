@@ -36,7 +36,7 @@ const MyOrders = (props) => {
   return (
     <>
       <div className="container mb-5">
-        <div className="d-flex my-3 align-items-center flex-wrap bg-white sticky-top border-bottom border-success pb-2">
+        <div className="d-flex my-3 align-items-center flex-wrap bg-white sticky-top  border-bottom border-success pb-2">
           <div>
             <h3 className=" text-success">Orders of Mr. {user?.displayName}</h3>
             <p> EMail: {user?.email}</p>

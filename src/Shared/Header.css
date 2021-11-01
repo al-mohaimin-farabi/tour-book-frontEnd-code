@@ -4,3 +4,6 @@
   border: 2px solid white;
   margin: 0px 10px;
 }
+.z-index {
+  z-index: 1040 !important;
+}

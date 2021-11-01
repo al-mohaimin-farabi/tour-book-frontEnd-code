@@ -44,7 +44,7 @@ const Header = () => {
                 </Nav.Link>
               )}
               {user?.displayName && (
-                <Dropdown>
+                <Dropdown className="z-index">
                   <Dropdown.Toggle
                     className="fw-normal bg-dark fs-6 text-white mt-1 border-dark me-md-2 me-lg-2"
                     variant="secondary"
