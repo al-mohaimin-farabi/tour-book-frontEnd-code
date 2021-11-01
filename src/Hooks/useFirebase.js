@@ -13,7 +13,7 @@ import initializeAuthentication from "../Pages/Login/Firebase/FireBaseInit";
 initializeAuthentication();
 
 const useFirebase = () => {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState([]);
   const [error, setError] = useState("");
   const [isLogin, setIsLogin] = useState(false);
   const [isLoading, setIsLoading] = useState(true);

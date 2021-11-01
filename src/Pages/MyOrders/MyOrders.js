@@ -3,9 +3,11 @@ import useAuth from "../../Hooks/useAuth";
 import "./MyOrders.css";
 const MyOrders = (props) => {
   const { user } = useAuth();
-  const [orders, setOrders] = useState();
+  const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/orders?search=${user.email}`)
+    fetch(
+      `https://grim-citadel-46797.herokuapp.com/orders?search=${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => setOrders(data));
 
@@ -43,32 +45,39 @@ const MyOrders = (props) => {
             <img className="rounded ms-2" src={user?.photoURL} alt="" />
           </div>
         </div>
-        <ul className="list-group align-middle">
-          {orders?.map((order) => (
-            <li
-              key={Math.random() * 1000}
-              className="list-group-item align-middle"
-            >
-              <div className="d-flex justify-content-center align-item-center">
-                <div className="col-6   ">
-                  <p className="mt-2">{order?.orderTitle}</p>
-                  <p className="mt-2">For {order?.Name}</p>
-                  <p className="mt-2">Email: {order?.Email}</p>
-                  <p className="mt-2">Phone: {order?.phonenumber}</p>
-                  <p className="mt-2">PickUp From: {order?.PickUpPoint}</p>
+        {console.log(orders)}
+        {orders?.length > 0 ? (
+          <ul className="list-group align-middle">
+            {orders?.map((order) => (
+              <li
+                key={Math.random() * 1000}
+                className="list-group-item align-middle"
+              >
+                <div className="d-flex justify-content-center align-item-center">
+                  <div className="col-6   ">
+                    <p className="mt-2">{order?.orderTitle}</p>
+                    <p className="mt-2">For {order?.Name}</p>
+                    <p className="mt-2">Email: {order?.Email}</p>
+                    <p className="mt-2">Phone: {order?.phonenumber}</p>
+                    <p className="mt-2">PickUp From: {order?.PickUpPoint}</p>
+                  </div>
+                  <div className="col-6 text-end d-flex align-items-center justify-content-end">
+                    <button
+                      className="btn btn-danger me-3"
+                      onClick={() =>
+                        handleDelete(order?._id, order?.orderTitle)
+                      }
+                    >
+                      X
+                    </button>
+                  </div>
                 </div>
-                <div className="col-6 text-end d-flex align-items-center justify-content-end">
-                  <button
-                    className="btn btn-danger me-3"
-                    onClick={() => handleDelete(order?._id, order?.orderTitle)}
-                  >
-                    X
-                  </button>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <h4>Nothing Orderd Yet</h4>
+        )}
       </div>
       {props?.footer && (
         <div className="position-m-footer">
